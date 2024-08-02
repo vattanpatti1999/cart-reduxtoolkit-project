@@ -6,7 +6,7 @@ const initialState = {
 };
 
 export const getProducts = createAsyncThunk("products/get", async () => {
-  const response = await fetch("https://api.escuelajs.co/api/v1/products");
+  const response = await fetch("https://fakestoreapi.com/products");
   const result = await response.json();
   return result;
 });

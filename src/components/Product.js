@@ -37,10 +37,10 @@ export default function Product() {
       >
         <Card className="h-100">
           <div className="text-center">
-            {product.images && product.images[0] && (
+            {
               <Card.Img
                 variant="top"
-                src={product.images[0]}
+                src={product.image}
                 style={{
                   width: "100px",
                   height: "130px",
@@ -48,7 +48,7 @@ export default function Product() {
                   borderRadius: "10px",
                 }}
               />
-            )}
+            }
           </div>
 
           <Card.Body>
